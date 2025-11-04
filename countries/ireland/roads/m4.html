@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="../../../global_images/favicon.ico">
+        <link rel="stylesheet" href="../../../style.css">
+        <title>M4 | Road Info Ireland</title>
+    </head>
+    <body>
+        <nav class="centrenav">
+            <ul>
+                <li><img src="../../../global_images/favicon.ico" alt="logo"></li>
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a class="active" href="../../../countries/ireland.html">Ireland</a></li>
+                <li><a href="../../../countries/northernireland.html">Northern Ireland</a></li>
+                <li><a href="../../../news.html">News</a></li>
+            </ul>
+        </nav>
+        <p>‎ </p>
+        <div class="centre">
+            <img style="width: 100%; border-radius: 30px;" src="./images/n4:m4/bgmod1.jpg" alt="bgmod1">
+            <br>
+            <img src="./images/n4:m4/n4.png" alt="N4">
+        </div>
+        <div class="centre"><h2>Route Information ‎ <span style="font-size:30px; cursor:pointer;" onclick="openInfo()">&#9776;</span></h2></div>
+        <div id="infoBar" class="info">
+            <a style="text-decoration: none;" href="javascript:void(0)" id="closebtn" onclick="closeInfo()">&times;</a>
+            <br>
+            <br>
+            <br>
+            <img style="width: 150px;" src="./images/n4:m4/n4.png" alt="N1">
+            <h2>Basic Information</h2>
+            <h3>Length:</h3>
+            <p>15.4km (9.5mi)</p>
+            <p>9.2km (5.7mi) of dual-carriageway</p>
+            <p>Country: <a style="color: white;" href="../../ireland.html">Ireland</a></p>
+            <p>Provences:</p>
+            <ul style="text-align: left;">
+                <li>Leinster</li>
+            </ul>
+            <p>Counties:</p>
+            <ul style="text-align: left;">
+                <li>County Dublin</li>
+                <li>County Meath</li>
+                <li>County Louth</li>
+            </ul>
+            <p>Primary Destinations:</p>
+            <p>Bypassed routes in <strong>bold</strong>.</p>
+            <ul>
+                <li>County Dublin<br><br></li>
+                <ul>
+                    <li>Dublin</li>
+                </ul>
+                <br>
+                <br>
+                <li>County Louth<br><br></li>
+                <ul>
+                    <li><strong>Dundalk</strong></li>
+                </ul>
+            </ul>
+            <h3>Route type:</h3>
+            <p>Primary</p>
+            <br>
+            <br>
+            <br>
+            <img style="width: 150px;" src="./images/n1:m1/m1.png" alt="M1">
+            <h2>Basic Information</h2>
+            <h3>Length:</h3>
+            <p>81km (50.3mi)</p>
+            <p>Country: <a style="color: white;" href="../../ireland.html">Ireland</a></p>
+            <p>Provences:</p>
+            <ul>
+                <li>Leinster</li>
+            </ul>
+            <p>Counties</p>
+            <ul>
+                <li>County Dublin</li>
+                <li>County Meath</li>
+                <li>County Louth</li>
+            </ul>
+            <p>Primary Destinations:</p>
+            <p>Bypassed routes in <strong>bold</strong>.</p>
+            <ul>
+                <li>County Dublin</li>
+                <ul>
+                    <li>Dublin</li>
+                    <li><strong>Swords</strong></li>
+                    <li><strong>Balbriggan</strong></li>
+                </ul>
+                <br>
+                <br>
+                <li>County Meath</li>
+                <ul>
+                    <li><strong>Drogheda (South)</strong></li>
+                </ul>
+                <br>
+                <br>
+                <li>County Louth</li>
+                <ul>
+                    <li><strong>Drogheda (North)</strong></li>
+                    <li><strong>Dundalk</strong></li>
+                </ul>
+            </ul>
+            <h3>Route type:</h3>
+            <p>Motorway</p>
+        </div>
+        <h2></h2>
+        <p></p>
+        <div class="centre">
+            <img src="./images/n4:m4/m4.png" alt="M4">
+        </div>
+        <h2 class="centre">History</h2>
+        <div id="history">
+            <p></p>
+        </div>
+        <h2 class="centre">Road-map of the <img style="width: 30px;" src="./images/n4:m4/n4.png" alt="N4">/<img style="width: 30px;" src="./images/n4:m4/m4_no_entry_icon.png" alt="M4"></h2>
+        <div id="roadmap">
+            <h4><img width="50px" src="images/n15/n15.png" alt="N15"> Derry, Donegal</h4>
+            <table>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td></td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/non8.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n16/n16.png" alt="N16"> Enniskillen, Belfast</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td></td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/non7.png" alt="unmarked"></td>
+                    <td>Sligo (North)</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td>Sligo Airport, Strandhill</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/non6.png" alt="unmarked"></td>
+                    <td>Sligo (Centre)</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/s4.png" alt="S4"></td>
+                    <td></td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/s4.png" alt="s4"></td>
+                    <td>Circular Road</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/s3.png" alt="S3"></td>
+                    <td>(<img width="40px" src="images/n4:m4/r292.png" alt="R292">) Strandhill</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/s3.png" alt="s3"></td>
+                    <td>Sligo (Centre)</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/s2.png" alt="S2"></td>
+                    <td>Oakfield</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/s2.png" alt="s2"></td>
+                    <td>Sligo (South)<br><br><br><img width="40px" src="images/n4:m4/r287.png" alt="R287"> Dromahair<br><br><img width="40px" src="images/n4:m4/r284.png" alt="R284"> Keadew</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/s1.png" alt="S1"></td>
+                    <td><img width="40px" src="images/n4:m4/r292.png" alt="R292"> Strandhill<br><br><br><img src="images/n59/n59.png" width="40px" alt="N59"> Ballina</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/s1.png" alt="s1"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n4:m4/r290.png" alt="R290"> Collooney</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown7.png" alt="s1"></td>
+                    <td><img width="40px" src="images/n4:m4/r290.png" alt="R290"> Ballintogher</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n17:m17/n17.png" alt="N17"> Galway, Ireland West Airport</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown10.png" alt="unknown10"></td>
+                    <td>L3700</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td>L1502 Ballymote</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown9.png" alt="unknown9"></td>
+                    <td>L1502 Riverstown</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td>L1404 Castlebaldwin</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown8.png" alt="unknown8"></td>
+                    <td>L1404 Highwood</td>
+                </tr>
+            </table>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Dublin</h4>
+            <hr>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Sligo</h4>
+            <table>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n61/n61.png" alt="N61"> Roscommon, Boyle</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/non5.png" alt="non5"></td>
+                    <td></td>
+                </tr>
+            </table>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Dublin</h4>
+            <hr>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Sligo</h4>
+            <table>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td>L1601 Dromod</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/non4.png" alt="non4"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td>L1600 Dromod</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown10.png" alt="unknown10"></td>
+                    <td><img width="40px" src="images/n4:m4/r202.png" alt="R202"> Enniskillen</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n4:m4/r371.png" alt="R371"> Strokestown</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown6.png" alt="unknown6"></td>
+                    <td></td>
+                </tr>
+            </table>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Dublin</h4>
+            <hr>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Sligo</h4>
+            <table>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n5/n5.png" alt="N5"> Westport</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown5.png" alt="unknown5"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n4:m4/r198.png" alt="R198"> Longford</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/non9.png" alt="non9"></td>
+                    <td><img width="40px" src="images/n4:m4/r198.png" alt="R198"> Arvagh</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n63/N63.png" alt="N63"> Roscommon</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown3.png" alt="unknown3"></td>
+                    <td><img width="40px" src="images/n4:m4/r194.png" alt="R194"> Granard</td>
+                </tr>
+            </table>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Dublin</h4>
+            <hr>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Sligo</h4>
+            <table>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img width="40px" src="images/n55/n55.png" alt="N55"> Athlone</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown2.png" alt="unknown2"></td>
+                    <td>Edgeworthstown (Centre)</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td></td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/unknown1.png" alt="unknown1"></td>
+                    <td><img width="40px" src="images/n55/n55.png" alt="N55"> Cavan</td>
+                </tr>
+            </table>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Dublin</h4>
+            <hr>
+            <h4><img width="40px" src="images/n4:m4/n4.png" alt="N4"> Sligo</h4>
+            <table>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/17.png" alt="17"></td>
+                    <td><img width="40px" src="images/n4:m4/r394.png" alt="R394"> Mullingar (North)</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/17.png" alt="17"></td>
+                    <td><img width="40px" src="images/n4:m4/r394.png" alt="R394"> Castlepollard</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/16.png" alt="16"></td>
+                    <td>Mullingar (Centre)</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/16.png" alt="16"></td>
+                    <td><img width="40px" src="images/n52/n52.png" alt="N52"> Dundalk</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/15.png" alt="15"></td>
+                    <td><img width="40px" src="images/n52/n52.png" alt="N52"> Tullamore, Mullingar (East)</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/15.png" alt="15"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img src="../../../global_images/services.png" alt="Services"></td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/services2.png" alt="services2"></td>
+                    <td><img src="../../../global_images/services.png" alt="Services"></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/14.png" alt="14"></td>
+                    <td></td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/14.png" alt="14"></td>
+                    <td>Killucan</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/13.png" alt="13"></td>
+                    <td><img width="40px" src="images/n4:m4/r148.png" alt="R148"> Coralstown</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/13.png" alt="13"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/12.png" alt="12"></td>
+                    <td><img width="40px" src="images/n4:m4/r446.png" alt="R446"> Milltownpass<br>(<img width="30px" src="images/n6:m6/m6_no_entry_icon.png" alt="M6">)</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/12.png" alt="12"></td>
+                    <td><img width="40px" src="images/n4:m4/r446.png" alt="R446"> Kinnegad (West)</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/11.png" alt="11"></td>
+                    <td><img width="60px" src="images/n6:m6/m6.png" alt="M6"> Galway</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/11.png" alt="11"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/10.png" alt="10"></td>
+                    <td><img width="40px" src="images/n4:m4/r401.png" alt="R401"> Ballinabrackey</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/10.png" alt="10"></td>
+                    <td><img width="40px" src="images/n4:m4/r401.png" alt="R401"> Kinnegad (East)</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td><img src="../../../global_images/services.png" alt="Services"></td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/services1.png" alt="services1"></td>
+                    <td><img src="../../../global_images/services.png" alt="Services"></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/9.png" alt="9"></td>
+                    <td><img width="40px" src="images/n4:m4/r402.png" alt="R402"> Johnstown-bridge</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/9.png" alt="9"></td>
+                    <td><img width="40px" src="images/n4:m4/r402.png" alt="R402"> Enfield</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/unmarked.png" alt="unmarked"></td>
+                    <td></td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/toll.png" alt="toll"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/8.png" alt="8"></td>
+                    <td><img width="40px" src="images/n4:m4/r407.png" alt="R407"> Clane</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/8.png" alt="8"></td>
+                    <td><img width="40px" src="images/n4:m4/r148.png" alt="R148"> Enfield<br><br><img width="40px" src="images/n4:m4/r148.png" alt="R148"> Kilcock</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/7.png" alt="7"></td>
+                    <td><img width="40px" src="images/n4:m4/r406.png" alt="R406"> Naas</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/7.png" alt="7"></td>
+                    <td><img width="40px" src="images/n4:m4/r406.png" alt="R406"> Maynooth</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/6.png" alt="6"></td>
+                    <td><img width="40px" src="images/n4:m4/r449.png" alt="R449"> Celbridge<br><br>Castletown</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/6.png" alt="6"></td>
+                    <td><img width="40px" src="images/n4:m4/r449.png" alt="R449"> (<img width="40px" src="images/n4:m4/r148.png" alt="R148">) Leixlip</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/5.png" alt="5"></td>
+                    <td><img width="40px" src="images/n4:m4/r403.png" alt="R403"> Celbridge</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/5.png" alt="5"></td>
+                    <td>(<img width="40px" src="images/n4:m4/r148.png" alt="R148">) Leixlip</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/4a.png" alt="4a"></td>
+                    <td>L1018 Dodsboro</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/4a.png" alt="4a"></td>
+                    <td><img width="40px" src="images/n4:m4/r835.svg" alt="R835"> Lucan</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/4.png" alt="4"></td>
+                    <td><img width="40px" src="images/n4:m4/r120.png" alt="R120"> Newcastle</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/4.png" alt="4"></td>
+                    <td><img width="40px" src="images/n4:m4/r120.png" alt="R120"> Lucan</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/3.png" alt="3"></td>
+                    <td><img width="40px" src="images/n4:m4/r136.png" alt="R136"> Adamstown</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/3.png" alt="3"></td>
+                    <td><img width="40px" src="images/n4:m4/r835.svg" alt="R835"> Lucan</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/2.png" alt="2"></td>
+                    <td><img width="40px" src="images/m50/r113.png" alt="R113"> Liffey Valley</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/2.png" alt="2"></td>
+                    <td>Old Lucan Road</td>
+                </tr>
+                <tr>
+                    <td><img class="junctionnum" src="../../../global_images/junctionnums/1.png" alt="1"></td>
+                    <td><img width="60px" src="images/m50/m50.png" alt="M50"> SOUTHBOUND</td>
+                    <td><img style="width: 50%;" src="./images/n4:m4/junctions/1.png" alt="1"></td>
+                    <td><img width="60px" src="images/m50/m50.png" alt="M50"> NORTHBOUND</td>
+                </tr>
+            </table>
+            <h4><img width="50px" src="images/n4:m4/r148.png" alt="R148"> Dublin (Centre)</h4>
+        </div>
+        <div id="connectsto">
+            <h2>Connects to:</h2>
+            <ul>
+                <li><a href="./m50.html"><img src="./images/m50/m50_no_entry_icon.png" alt="M50"></a></li>
+                <li><a href="./m6.html"><img src="./images/n6:m6/m6_no_entry_icon.png" alt="M6"></a></li>
+                <li><a href="./n52.html"><img src="./images/n52/n52.png" alt="N52"></a></li>
+                <li><a href="./n55.html"><img src="./images/n55/n55.png" alt="N55"></a></li>
+                <li><a href="./n63.html"><img src="./images/n63/N63.png" alt="N63"></a></li>
+                <li><a href="./n5.html"><img src="./images/n5/n5.png" alt="N5"></a></li>
+                <li><a href="./n61.html"><img src="./images/n61/n61.png" alt="N61"></a></li>
+                <li><a href="./n17.html"><img src="./images/n17:m17/n17.png" alt="N17"></a></li>
+                <li><a href="./n59.html"><img src="./images/n59/n59.png" alt="N59"></a></li>
+                <li><a href="./n15.html"><img src="./images/n15/n15.png" alt="N15"></a></li>
+                <li><a href="./n16.html"><img src="./images/n16/n16.png" alt="N16"></a></li>
+            </ul>
+        </div>
+    <script src="../../../script.js"></script>
+    </body>
+</html>
